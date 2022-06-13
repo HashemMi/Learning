@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
@@ -13,15 +12,21 @@ int main()
 {
     cout << "this should get a number from you and provide the approx root" ;
 
-    int numberToRoot = 0;
-    int rootOfNumber = 0;
+    int num = 0;
+    int root = 0;
+    int i=0;
 
 
-    cin >> numberToRoot;
+    cout << "Enter a number to find the approx root of: ";
+    cin >> num;
 
-    rootOfNumber = sqrt(numberToRoot);
 
-    cout << "Square Root = " << rootOfNumber;
+    while  (i*i <= num)
+    {
+        i++;
+    }
+
+    cout << "Square Root = " << i-1;
 
     return(0);
 
